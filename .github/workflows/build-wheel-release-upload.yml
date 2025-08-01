@@ -11,7 +11,8 @@ jobs:
     uses: scikit-package/release-scripts/.github/workflows/_build-wheel-release-upload.yml@v0
     with:
       project: scikit-package
-      maintainer_github_username: sbillinge
+      c_extension: false
+      maintainer_github_username: Tieqiong
 
     secrets:
       PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
