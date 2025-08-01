@@ -1,0 +1,1132 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frequently asked questions (FAQ) &mdash; scikit-package 0.0.1rc0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
+    <link rel="shortcut icon" href="../_static/scikit-package-logo-blank.png"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=1ea0b0c9"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=cca77546"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Release notes" href="../release.html" />
+    <link rel="prev" title="Billinge Group standards" href="../programming-guides/billinge-group-standards.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/scikit-package-logo-docs.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">GETTING STARTED</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html#where-do-i-begin">Where do I begin?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">TUTORIALS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorial-level-1-2-3.html">(Level 1-3) Reuse code within a file, across files and folders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorial-level-4.html">(Level 4) Share your code as a locally installable Python package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorial-level-5.html">(Level 5) Share your code as a publicly installable package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorial-level-4-to-5.html">Migrate your package from Level 4 to Level 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorial-level-5-migration.html">Migrate your existing package with <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorial-manuscript.html">Create a configured LaTeX manuscript folder with <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">RELEASE GUIDES</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../release-guides/pypi-github.html">Publish on GitHub and to PyPI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release-guides/conda-forge.html">Create conda package with conda-forge</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">EXAMPLES</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../examples/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/example-level-4.html">Example 1. Create your first Level 4 package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/example-level-5.html">Example 2. Create your first Level 5 public package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/example-level-5-namespace.html">Example 3. Create a package with branded namespace import at Level 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/example-level-5-migration.html">Example 4. Migrate an existing package to Level 5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PROGRAMMING GUIDES</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../programming-guides/billinge-group-standards.html">Billinge Group standards</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SUPPORT</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Frequently asked questions (FAQ)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pre-commit">Pre-commit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-is-pre-commit-used-in-each-level">How is pre-commit used in each Level?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-modify-line-width-limits">How do I modify line-width limits?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-skip-a-specific-file-for-flake8-and-black">How do I skip a specific file for <code class="docutils literal notranslate"><span class="pre">flake8</span></code> and <code class="docutils literal notranslate"><span class="pre">black</span></code>?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-suppress-the-flake8-error">How do I suppress the <code class="docutils literal notranslate"><span class="pre">flake8</span></code> error?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-fix-conflicted-hook-auto-fix-errors">How do I fix conflicted hook auto-fix errors?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-ignore-words-lines-files-in-automatic-spelling-checks-in-pre-commit">How do I ignore words/lines/files in automatic spelling checks in pre-commit?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#project-setup">Project setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#i-read-scikit-package-allows-namespace-support-for-importing-packages-what-is-it-and-how-do-i-set-it-up">I read <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> allows namespace support for importing packages. What is it, and how do I set it up?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#what-is-the-difference-in-folder-structure-compared-to-a-standard-package">What is the difference in folder structure compared to a standard package?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-do-i-set-it-up-with-scikit-package">How do I set it up with <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code>?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#in-level-5-why-do-we-adopt-readme-rst-instead-of-readme-md">In Level 5, why do we adopt <code class="docutils literal notranslate"><span class="pre">README.rst</span></code> instead of <code class="docutils literal notranslate"><span class="pre">README.md</span></code>?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-can-i-change-the-default-values-that-appear-in-the-prompt-when-creating-projects-in-level-3-4-5">How can I change the default values that appear in the prompt when creating projects in Level 3,4,5?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-can-i-change-the-location-of-configuration-file">How can I change the location of configuration file?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#release">Release</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-can-i-change-who-is-authorized-to-release-a-package">How can I change who is authorized to release a package?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#release-ci-failed-what-should-i-do">Release CI failed. What should I do?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-is-the-package-version-set-and-retrieved">How is the package version set and retrieved?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-include-exclude-files-in-pypi-release">How do I include/exclude files in PyPI release?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#why-have-we-decided-to-include-test-files-in-the-pypi-source-distribution">Why have we decided to include test files in the PyPI source distribution?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-can-i-preview-the-documentation-in-real-time">How can I preview the documentation in real-time?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-build-api-rst-files-automatically-for-a-standard-python-package">How do I build API .rst files automatically for a standard Python package?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-build-api-rst-files-for-a-python-package-with-a-namespace-import">How do I build API .rst files for a Python package with a namespace import?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-can-i-preview-the-documentation-in-each-pull-request">How can I preview the documentation in each pull request?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-re-deploy-online-documentation-without-another-release">How do I re-deploy online documentation without another release?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-fix-the-no-module-named-error-when-i-render-documentation">How do I fix the “No module named” error when I render documentation?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-add-a-favicon-and-logo-to-the-documentation">How do I add a favicon and logo to the documentation?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#conda-forge">conda-forge</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-add-a-new-admin-to-the-conda-forge-feedstock">How do I add a new admin to the conda-forge feedstock?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-do-pre-release-for-conda-forge">How do I do pre-release for conda-forge?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#github-actions">GitHub Actions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#in-level-5-how-do-i-set-different-python-versions-for-github-ci">In Level 5, How do I set different Python versions for GitHub CI?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#in-level-5-what-are-the-workflows-running-in-each-pull-request">In Level 5, what are the workflows running in each pull request?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#in-level-5-i-see-that-another-workflow-is-running-once-a-pr-is-merged-to-main-what-is-it">In Level 5, I see that another workflow is running once a PR is merged to <code class="docutils literal notranslate"><span class="pre">main</span></code>. What is it?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-am-encountering-a-build-is-requesting-pull-requests-write-error-how-do-i-fix-it">I am encountering a ‘build’ is requesting ‘pull-requests: write’ error. How do I fix it?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-the-difference-between-pull-request-and-pull-request-target">What is the difference between <code class="docutils literal notranslate"><span class="pre">pull_request</span></code> and <code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code>?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-can-i-add-extra-cli-commands-in-the-github-workflow-for-running-tests">How can I add extra CLI commands in the GitHub workflow for running tests?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-have-a-private-repo-and-don-t-have-a-codecov-paid-plan-can-i-modify-the-ci-workflows-for-this-situation">I have a private repo and don’t have a Codecov paid plan.  Can I modify the CI workflows for this situation?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dependency-management">Dependency management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-are-docs-txt-tests-txt-build-txt-and-conda-txt-files-under-requirements-in-level-4-and-level-5">What are <code class="docutils literal notranslate"><span class="pre">docs.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">tests.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">build.txt</span></code>, and <code class="docutils literal notranslate"><span class="pre">conda.txt</span></code> files under <code class="docutils literal notranslate"><span class="pre">\requirements</span></code> in Level 4 and Level 5?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-conda-forge">What is conda-forge?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-are-miniconda-anaconda-and-miniforge">What are Miniconda, Anaconda, and Miniforge?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#why-do-some-people-use-mamba-instead-of-conda">Why do some people use mamba instead of conda?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#why-are-both-pip-txt-and-conda-txt-provided">Why are both <code class="docutils literal notranslate"><span class="pre">pip.txt</span></code> and <code class="docutils literal notranslate"><span class="pre">conda.txt</span></code> provided?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#github-workflow">GitHub workflow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#i-am-new-to-github-why-do-we-use-git-github">I am new to GitHub. Why do we use Git/GitHub?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-the-general-the-workflow">What is the general the workflow?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-have-a-general-understanding-of-fork-clone-commit-push-and-pull-request-how-do-i-set-up-my-repository-for-packaging">I have a general understanding of fork, clone, commit, push, and pull request. How do I set up my repository for packaging?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#do-you-have-a-general-summary-of-each-term-used-in-the-github-workflow">Do you have a general summary of each term used in the GitHub workflow?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-have-cloned-and-added-upstream-what-is-the-next-step">I have cloned and added <code class="docutils literal notranslate"><span class="pre">upstream</span></code>. What is the next step?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-still-need-to-make-another-pull-request-how-do-i-do-that">I still need to make another pull request. How do I do that?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-can-i-automate-the-process-of-creating-a-new-file-from-the-command-line">How can I automate the process of creating a new file from the command line?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#maintaining-scikit-package">Maintaining <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#when-should-we-expect-different-python-versions-to-be-supported-in-the-github-workflows">When should we expect different Python versions to be supported in the GitHub workflows?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#which-files-should-be-modified-when-there-is-a-new-python-version">Which files should be modified when there is a new Python version?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">REFERENCE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../release.html">Release notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">scikit-package</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Frequently asked questions (FAQ)</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/scikit-package/scikit-package/blob/main/docs/source/support/frequently-asked-questions.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="frequently-asked-questions-faq">
+<span id="frequently-asked-questions"></span><span id="index-0"></span><h1>Frequently asked questions (FAQ)<a class="headerlink" href="#frequently-asked-questions-faq" title="Link to this heading"></a></h1>
+<p>Here, you will learn how to customize the <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> template for your own project, such as setting the line-width and including/excluding files for PyPI distribution. We also provide design decisions for the current setup of the <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> template.</p>
+<section id="pre-commit">
+<span id="faq-pre-commit"></span><h2>Pre-commit<a class="headerlink" href="#pre-commit" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Pre-commit</span></code> attempts to automatically fix code style issues. The following questions are used to customize the <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> configuration for your project’s needs.</p>
+<section id="how-is-pre-commit-used-in-each-level">
+<span id="faq-pre-commit-levels"></span><h3>How is pre-commit used in each Level?<a class="headerlink" href="#how-is-pre-commit-used-in-each-level" title="Link to this heading"></a></h3>
+<p>Here is a recommended setup and hooks for <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> for each level:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Level</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Recommended setup</p></th>
+<th class="head"><p>Hooks used</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">workspace</span></code></p></td>
+<td><p>Run <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">run</span> <span class="pre">--all-files</span></code> locally.</p></td>
+<td><p>Automatic linting with <code class="docutils literal notranslate"><span class="pre">black</span></code>, <code class="docutils literal notranslate"><span class="pre">prettier</span></code>, <code class="docutils literal notranslate"><span class="pre">docformatter</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">system</span></code></p></td>
+<td><p>Use <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">install</span></code> locally, <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">CI</span></code> in GitHub</p></td>
+<td><p>Level 3 hooks, PEP 8 check with <code class="docutils literal notranslate"><span class="pre">flake8</span></code>, default hooks (merge conflicts, end-of-file-fixer, etc.)</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">public</span></code></p></td>
+<td><p>Same as Level 4</p></td>
+<td><p>Level 4 hooks, no commits to <code class="docutils literal notranslate"><span class="pre">main</span></code>, spell checker with <code class="docutils literal notranslate"><span class="pre">codespell</span></code>,</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="how-do-i-modify-line-width-limits">
+<h3>How do I modify line-width limits?<a class="headerlink" href="#how-do-i-modify-line-width-limits" title="Link to this heading"></a></h3>
+<p>The following files need to be modified:</p>
+<ol class="arabic simple">
+<li><p>In <code class="docutils literal notranslate"><span class="pre">.isort.cfg</span></code>, modify <code class="docutils literal notranslate"><span class="pre">line_length</span></code>.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">.flake8</span></code>, modify <code class="docutils literal notranslate"><span class="pre">max-line-length</span></code>.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>, modify <code class="docutils literal notranslate"><span class="pre">line-length</span></code> under <code class="docutils literal notranslate"><span class="pre">[tool.black]</span></code>.</p></li>
+</ol>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>As recommended by PEP 8, comments and docstrings should be wrapped at 72 characters, as defined under <code class="docutils literal notranslate"><span class="pre">[tool.docformatter]</span></code> in <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>.</p>
+</div>
+</section>
+<section id="how-do-i-skip-a-specific-file-for-flake8-and-black">
+<h3>How do I skip a specific file for <code class="docutils literal notranslate"><span class="pre">flake8</span></code> and <code class="docutils literal notranslate"><span class="pre">black</span></code>?<a class="headerlink" href="#how-do-i-skip-a-specific-file-for-flake8-and-black" title="Link to this heading"></a></h3>
+<p>To skip files checked by <code class="docutils literal notranslate"><span class="pre">flake8</span></code>, include the file path in <code class="docutils literal notranslate"><span class="pre">.flake8</span></code> under the <code class="docutils literal notranslate"><span class="pre">exclude</span></code> section.</p>
+<p>To prevent <code class="docutils literal notranslate"><span class="pre">black</span></code> from formatting, include the file path in <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> under the <code class="docutils literal notranslate"><span class="pre">[tool.black]</span></code> section.</p>
+</section>
+<section id="how-do-i-suppress-the-flake8-error">
+<h3>How do I suppress the <code class="docutils literal notranslate"><span class="pre">flake8</span></code> error?<a class="headerlink" href="#how-do-i-suppress-the-flake8-error" title="Link to this heading"></a></h3>
+<p>Ad <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">noqa:</span> <span class="pre">&lt;error-code&gt;</span></code> at the end of the line. For example, <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">numpy</span> <span class="pre">as</span> <span class="pre">np</span> <span class="pre">#</span> <span class="pre">noqa:</span> <span class="pre">E000</span></code>.</p>
+</section>
+<section id="how-do-i-fix-conflicted-hook-auto-fix-errors">
+<span id="faq-pre-commit-error"></span><h3>How do I fix conflicted hook auto-fix errors?<a class="headerlink" href="#how-do-i-fix-conflicted-hook-auto-fix-errors" title="Link to this heading"></a></h3>
+<p>You may encounter the following error message when you run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&lt;your-commit-message&gt;</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Stashed</span> <span class="n">changes</span> <span class="n">conflicted</span> <span class="k">with</span> <span class="n">hook</span> <span class="n">auto</span><span class="o">-</span><span class="n">fixes</span><span class="o">...</span>
+</pre></div>
+</div>
+<p>To solve this problem, run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">&lt;file&gt;</span></code> on the files modified by <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code>. Then, re-enter same commit message above using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&lt;your-commit-message&gt;</span></code>. Why do we need to run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> again? The files that are linted by <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> are not staged to the local Git database. So, we stage them manually again with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>.</p>
+</section>
+<section id="how-do-i-ignore-words-lines-files-in-automatic-spelling-checks-in-pre-commit">
+<span id="faq-codespell-ignore"></span><h3>How do I ignore words/lines/files in automatic spelling checks in pre-commit?<a class="headerlink" href="#how-do-i-ignore-words-lines-files-in-automatic-spelling-checks-in-pre-commit" title="Link to this heading"></a></h3>
+<p>To ignore a word, add it to <code class="docutils literal notranslate"><span class="pre">.codespell/ignore_words.txt</span></code>. You can find an example file here: <a class="reference external" href="https://github.com/diffpy/diffpy.fourigui/blob/main/.codespell/ignore_words.txt">https://github.com/diffpy/diffpy.fourigui/blob/main/.codespell/ignore_words.txt</a>.</p>
+<p>To ignore a specific line, add it to <code class="docutils literal notranslate"><span class="pre">.codespell/ignore_lines.txt</span></code>. See an example below:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>;; src/translation.py
+;; The following single-line comment is written in German.
+# Hallo Welt
+</pre></div>
+</div>
+<p>To ignore a specific file extension, add <code class="docutils literal notranslate"><span class="pre">*.ext</span></code> to the <code class="docutils literal notranslate"><span class="pre">skip</span></code> section under <code class="docutils literal notranslate"><span class="pre">[tool.codespell]</span></code> in <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>. You can find an example file here: <a class="reference external" href="https://github.com/diffpy/diffpy.fourigui/blob/main//pyproject.toml">https://github.com/diffpy/diffpy.fourigui/blob/main//pyproject.toml</a>.</p>
+</section>
+</section>
+<section id="project-setup">
+<h2>Project setup<a class="headerlink" href="#project-setup" title="Link to this heading"></a></h2>
+<section id="i-read-scikit-package-allows-namespace-support-for-importing-packages-what-is-it-and-how-do-i-set-it-up">
+<span id="faq-project-setup-namespace"></span><h3>I read <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> allows namespace support for importing packages. What is it, and how do I set it up?<a class="headerlink" href="#i-read-scikit-package-allows-namespace-support-for-importing-packages-what-is-it-and-how-do-i-set-it-up" title="Link to this heading"></a></h3>
+<p>A research group often maintains multiple software packages under a single GitHub organization.
+For the purposes of branding and also differentiating packages with similar names, it can sometimes be beneficial for the organization or research group name (or some other branding name) to appear in the package name itself.</p>
+<p>Here is an example. Consider the package called <code class="docutils literal notranslate"><span class="pre">diffpy.pdffit2</span></code>. The package starts with an organization identifier of <code class="docutils literal notranslate"><span class="pre">diffpy</span></code>, and the package name is <code class="docutils literal notranslate"><span class="pre">pdffit2</span></code>. There is a separate GitHub repository for this package (<a class="reference external" href="https://github.com/diffpy/diffpy.pdffit2">https://github.com/diffpy/diffpy.pdffit2</a>) while it is developed under the DiffPy organization (<a class="reference external" href="https://github.com/diffpy">https://github.com/diffpy</a>). The user can import the package as <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">diffpy.pdffit2</span> <span class="pre">as</span> <span class="pre">pdffit2</span></code> in any Python script.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This namespace feature is only available in Level 5, <code class="docutils literal notranslate"><span class="pre">public</span></code>. In programming, a “namespace” refers to a unique identifier that can hold many classes, functions, and variable names. Here we extend the concept that the top level namespace holds multiple packages.</p>
+</div>
+<section id="what-is-the-difference-in-folder-structure-compared-to-a-standard-package">
+<h4>What is the difference in folder structure compared to a standard package?<a class="headerlink" href="#what-is-the-difference-in-folder-structure-compared-to-a-standard-package" title="Link to this heading"></a></h4>
+<p>For a standard package, the folder structure is as follows:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>├── src
+│   ├── &lt;package_name&gt;
+│   │   ├── __init__.py
+│   │   ├── file_one.py
+│   │   ├── file_two.py
+</pre></div>
+</div>
+<p>For a package to be imported using <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">&lt;namespace_name&gt;.&lt;package_name&gt;</span></code>, the folder structure is as follows:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>├── src
+│   ├── &lt;namespace_name&gt;
+│   │   ├── __init__.py
+│   │   └── &lt;package_name&gt;
+│   │       ├── __init__.py
+│   │       ├── file_one.py
+│   │       ├── file_two.py
+</pre></div>
+</div>
+</section>
+<section id="how-do-i-set-it-up-with-scikit-package">
+<h4>How do I set it up with <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code>?<a class="headerlink" href="#how-do-i-set-it-up-with-scikit-package" title="Link to this heading"></a></h4>
+<p>Our <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> automatically handles this folder setup for you! When you run <code class="docutils literal notranslate"><span class="pre">package</span> <span class="pre">create</span> <span class="pre">public</span></code>, simply enter <code class="docutils literal notranslate"><span class="pre">project_name</span></code> as, e.g., <code class="docutils literal notranslate"><span class="pre">&lt;namespace_name&gt;.&lt;package_name&gt;</span></code>, like the default value provided. <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> adjusts the folder structure based on the presence of the <code class="docutils literal notranslate"><span class="pre">.</span></code> that separates the <code class="docutils literal notranslate"><span class="pre">&lt;namespace_name&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;package_name&gt;</span></code>.</p>
+</section>
+</section>
+<section id="in-level-5-why-do-we-adopt-readme-rst-instead-of-readme-md">
+<h3>In Level 5, why do we adopt <code class="docutils literal notranslate"><span class="pre">README.rst</span></code> instead of <code class="docutils literal notranslate"><span class="pre">README.md</span></code>?<a class="headerlink" href="#in-level-5-why-do-we-adopt-readme-rst-instead-of-readme-md" title="Link to this heading"></a></h3>
+<p>We adopt <code class="docutils literal notranslate"><span class="pre">README.rst</span></code> at Level 5 because reStructuredText (<code class="docutils literal notranslate"><span class="pre">.rst</span></code>) provides a more configurable format and control. One key advantage of <code class="docutils literal notranslate"><span class="pre">.rst</span></code> is its native support for advanced formatting, such as precise control over image size and layout:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="o">|</span><span class="n">Icon</span><span class="o">|</span> <span class="n">image</span><span class="p">::</span> <span class="n">img</span><span class="o">/</span><span class="n">logos</span><span class="o">/</span><span class="n">scikit</span><span class="o">-</span><span class="n">package</span><span class="o">-</span><span class="n">logo</span><span class="o">-</span><span class="n">text</span><span class="o">.</span><span class="n">png</span>
+    <span class="p">:</span><span class="n">target</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">scikit</span><span class="o">-</span><span class="n">package</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">scikit</span><span class="o">-</span><span class="n">package</span>
+    <span class="p">:</span><span class="n">height</span><span class="p">:</span> <span class="mi">150</span><span class="n">px</span>
+</pre></div>
+</div>
+<p>Achieving the same result in Markdown often requires raw HTML, which is less readable and may render inconsistently across platforms.</p>
+<p>Switching to <code class="docutils literal notranslate"><span class="pre">README.rst</span></code> at Level 5 helps users appreciate the formatting power of <code class="docutils literal notranslate"><span class="pre">.rst</span></code> and serves as a stepping stone toward writing full documentation in <code class="docutils literal notranslate"><span class="pre">.rst</span></code> as part of the <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> documentation standard.</p>
+</section>
+<section id="how-can-i-change-the-default-values-that-appear-in-the-prompt-when-creating-projects-in-level-3-4-5">
+<span id="faq-set-default-prompt-value"></span><h3>How can I change the default values that appear in the prompt when creating projects in Level 3,4,5?<a class="headerlink" href="#how-can-i-change-the-default-values-that-appear-in-the-prompt-when-creating-projects-in-level-3-4-5" title="Link to this heading"></a></h3>
+<p>You can override the existing default values in the prompt by creating and editing a configuration file <code class="docutils literal notranslate"><span class="pre">.skpkgrc</span></code> in the user <code class="docutils literal notranslate"><span class="pre">home</span></code> directory. In <code class="docutils literal notranslate"><span class="pre">bash</span></code> your <code class="docutils literal notranslate"><span class="pre">home</span></code> directory is designated by <code class="docutils literal notranslate"><span class="pre">~</span></code>.</p>
+<p>Here are the steps you can follow to override the default values for Level 5 usage.</p>
+<ol class="arabic simple">
+<li><p>Go to <code class="docutils literal notranslate"><span class="pre">home</span></code> directory.</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Create <code class="docutils literal notranslate"><span class="pre">.skpkgrc</span></code>.</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>touch<span class="w"> </span>.skpkgrc
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">.skpkgrc</span></code>. Copy and paste the following snippets to <code class="docutils literal notranslate"><span class="pre">.skpkgrc</span></code>.</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;default_context&quot;</span><span class="p">:</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;maintainer_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;local-default-maintainer-name&gt;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;maintainer_email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;local-default-maintainer-email&gt;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;maintainer_github_username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;local-default-maintainer-github-username&gt;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;github_username_or_orgname&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;local-default-github-username-or-orgname&gt;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;contributors&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;local-default-contributors-name&gt;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;license_holders&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;local-default-license-holders-name&gt;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;project_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;local-default-project-name&gt;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Replace words in angle brackets with values you prefer. These values will be your new default values when you run scikit-package on your local machine. In your <code class="docutils literal notranslate"><span class="pre">.skpkgrc</span></code> you may delete any rows that you do not want to modify from the package defaults.</p></li>
+</ol>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Creating packages in Level 3, 4 and 5 requires different entries. When you create a package at a certain level, only the entries with matched names will be processed. So irrelevant entries have no effect and you can set all the level 3, 4 and 5 default values in <code class="docutils literal notranslate"><span class="pre">.skpkgrc</span></code>.</p>
+</div>
+</section>
+<section id="how-can-i-change-the-location-of-configuration-file">
+<h3>How can I change the location of configuration file?<a class="headerlink" href="#how-can-i-change-the-location-of-configuration-file" title="Link to this heading"></a></h3>
+<p>The scikit-package configuration file is located in <code class="docutils literal notranslate"><span class="pre">~/.skpkgrc</span></code> by default. You can use the environment variable <code class="docutils literal notranslate"><span class="pre">SKPKG_CONFIG_FILE</span></code> to change its location.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">SKPKG_CONFIG_FILE</span><span class="o">=</span>/path/to/config
+</pre></div>
+</div>
+</section>
+</section>
+<section id="release">
+<h2>Release<a class="headerlink" href="#release" title="Link to this heading"></a></h2>
+<section id="how-can-i-change-who-is-authorized-to-release-a-package">
+<span id="release-authority"></span><h3>How can I change who is authorized to release a package?<a class="headerlink" href="#how-can-i-change-who-is-authorized-to-release-a-package" title="Link to this heading"></a></h3>
+<p>In <code class="docutils literal notranslate"><span class="pre">.github/workflows/build-wheel-release-upload.yml</span></code>, modify <code class="docutils literal notranslate"><span class="pre">maintainer_github_username</span></code> to the desired GitHub username. This username will be able to authorize the release by pushing the tag as instructed in <a class="reference internal" href="../release-guides/pypi-github.html#release-pypi-github"><span class="std std-ref">Publish on GitHub and to PyPI</span></a>.</p>
+</section>
+<section id="release-ci-failed-what-should-i-do">
+<span id="faq-release-ci-failed"></span><h3>Release CI failed. What should I do?<a class="headerlink" href="#release-ci-failed-what-should-i-do" title="Link to this heading"></a></h3>
+<p>Pre-release:</p>
+<ul>
+<li><p>Did you encounter an error under the <code class="docutils literal notranslate"><span class="pre">privilege-check</span></code> section in the workflow? Ensure the user performing the release has the GitHub username specified in <code class="docutils literal notranslate"><span class="pre">maintainer_github_username</span></code> under <code class="docutils literal notranslate"><span class="pre">.github/workflows/build-wheel-release-upload.yml</span></code>.</p></li>
+<li><p>Did you encounter an error related to <code class="docutils literal notranslate"><span class="pre">PYPI</span></code>? Ensure you have <code class="docutils literal notranslate"><span class="pre">PAT_TOKEN</span></code> configured at the organization or repository level. Please read <a class="reference internal" href="../release-guides/pypi-github.html#pypi-token-setup"><span class="std std-ref">Appendix 1. Setup PYPI_TOKEN to allow GitHub Actions to upload to PyPI</span></a>. Even if <code class="docutils literal notranslate"><span class="pre">PYPI_TOKEN</span></code> is already configured, ensure it is the latest token and has not been revoked or expired.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As the next step, if you created and pushed <code class="docutils literal notranslate"><span class="pre">*.*.*-rc.0</span></code>, you may simply bump and create a new version tag of <code class="docutils literal notranslate"><span class="pre">*.*.*-rc.1</span></code> and push it to the remote repository.</p>
+</div>
+</li>
+</ul>
+<p>Release:</p>
+<ul>
+<li><p>Did you encounter an error related to <code class="docutils literal notranslate"><span class="pre">fatal:</span> <span class="pre">could</span> <span class="pre">not</span> <span class="pre">read</span> <span class="pre">Username</span></code>? Ensure you have <code class="docutils literal notranslate"><span class="pre">PAT_TOKEN</span></code> configured at the organization or repository level. Please read <a class="reference internal" href="../release-guides/pypi-github.html#pat-token-setup"><span class="std std-ref">Appendix 2. Setup PAT_TOKEN to allow GitHub Actions to compile CHANGELOG.rst</span></a>. Even if <code class="docutils literal notranslate"><span class="pre">PAT_TOKEN</span></code> is already configured, ensure it is the latest token and has not been revoked or expired.</p></li>
+<li><p>Did you encounter any error from <code class="docutils literal notranslate"><span class="pre">Rulesets</span></code>? In your repository, visit <span class="menuselection">Settings ‣ Rules ‣ Rulesets</span>. Then click one or more of the rulesets. For each ruleset, under the <span class="guilabel">Bypass list</span>, click <span class="guilabel">Add bypass</span> and <span class="guilabel">Organization admin</span> to the ruleset. The GitHub workflow will use the <code class="docutils literal notranslate"><span class="pre">PAT_TOKEN</span></code> to bypass the ruleset.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Here, we don’t want to bump a new version. As the next step, delete the Git tag in the local by running <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">tag</span> <span class="pre">-d</span> <span class="pre">&lt;tagname&gt;</span></code> and visit <code class="docutils literal notranslate"><span class="pre">https://github.com/&lt;org-or-username&gt;/&lt;package-name&gt;/tags</span></code> to delete it in the remote. Then, follow the same process for a full release by creating a new tag and pushing it to the remote.</p>
+</div>
+</li>
+</ul>
+</section>
+<section id="how-is-the-package-version-set-and-retrieved">
+<h3>How is the package version set and retrieved?<a class="headerlink" href="#how-is-the-package-version-set-and-retrieved" title="Link to this heading"></a></h3>
+<p>In <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>, the <code class="docutils literal notranslate"><span class="pre">setuptools-git-versioning</span></code> tool is used to dynamically retrieve the version based on the latest tag in the repository. The latest tag is pushed during the release workflow. The dynamically parsed version is globally accessible, via <code class="docutils literal notranslate"><span class="pre">&lt;package-name&gt;.__version__</span></code>.</p>
+</section>
+<section id="how-do-i-include-exclude-files-in-pypi-release">
+<h3>How do I include/exclude files in PyPI release?<a class="headerlink" href="#how-do-i-include-exclude-files-in-pypi-release" title="Link to this heading"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">MANIFEST.in</span></code> file is used to control which files are included in the source distribution. Try running <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">build</span></code> and see the content under the <code class="docutils literal notranslate"><span class="pre">dist</span></code> folder generated.</p>
+<p>To include all files under a folder, use <code class="docutils literal notranslate"><span class="pre">graft</span></code>:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>graft src
+graft tests
+</pre></div>
+</div>
+<p>To include specific file(s), use <code class="docutils literal notranslate"><span class="pre">include</span></code>:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>include AUTHORS.txt LICENSE*.txt README.rst
+</pre></div>
+</div>
+<p>To exclude files globally, use <code class="docutils literal notranslate"><span class="pre">globally-exclude</span></code>:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>global-exclude *.py[cod]  # Exclude all .pyc, .pyo, and .pyd files.
+global-exclude .DS_Store  # Exclude Mac filesystem artifacts.
+global-exclude __pycache__  # Exclude Python cache directories.
+global-exclude .git*  # Exclude git files and directories.
+</pre></div>
+</div>
+</section>
+<section id="why-have-we-decided-to-include-test-files-in-the-pypi-source-distribution">
+<h3>Why have we decided to include test files in the PyPI source distribution?<a class="headerlink" href="#why-have-we-decided-to-include-test-files-in-the-pypi-source-distribution" title="Link to this heading"></a></h3>
+<p>We decided to include test files in the PyPI source distribution to facilitate unit testing with a newly built Conda package.</p>
+<p>The conda-forge CI uses the source code distributed via PyPI to build a Conda package. After building the package, we want to run pytest to ensure all unit tests pass before release. Therefore, test files must be included in the source code. In contrast, no documentation is distributed with the package, as it is already accessible from the GitHub repository and does not serve a practical purpose in the distribution package itself.</p>
+</section>
+</section>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading"></a></h2>
+<section id="how-can-i-preview-the-documentation-in-real-time">
+<h3>How can I preview the documentation in real-time?<a class="headerlink" href="#how-can-i-preview-the-documentation-in-real-time" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Install documentation related dependencies:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>--file<span class="w"> </span>requirements/docs.txt
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Enter into the <code class="docutils literal notranslate"><span class="pre">docs</span></code> project directory and render documentation:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>docs
+make<span class="w"> </span>html
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Open the rendered documentation via web browser:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>open<span class="w"> </span>_build/html/index.html
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Here is a shortcut if you want to use it from the root directory of the project:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>dosc<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>html<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>open<span class="w"> </span>_build/html/index.html<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>You can use a <code class="docutils literal notranslate"><span class="pre">alias</span></code> shortcut. Open <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> in your text editor and add the following line:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">doc</span><span class="o">=</span><span class="s1">&#39;cd docs &amp;&amp; make html &amp;&amp; open _build/html/index.html &amp;&amp; cd ..&#39;</span>
+</pre></div>
+</div>
+<p>Apply the changes to your current terminal session:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>~/.bashrc
+</pre></div>
+</div>
+<p>Now, you can simply enter the <code class="docutils literal notranslate"><span class="pre">docs</span></code> command in your terminal to build and open the documentation:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>doc
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p>(Optional for macOS/Linux only) Do you want to re-render documentation without running <code class="docutils literal notranslate"><span class="pre">doc</span></code> command every time? You can use <code class="docutils literal notranslate"><span class="pre">sphinx-reload</span></code>.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Install the dependencies including <code class="docutils literal notranslate"><span class="pre">sphinx-reload</span></code> sourced from <code class="docutils literal notranslate"><span class="pre">PyPI</span></code>:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>--file<span class="w"> </span>requirements/docs.txt
+pip<span class="w"> </span>install<span class="w"> </span>sphinx-reload
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Run the following command to start live-reloading:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-reload<span class="w"> </span>docs
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Now, each time you make changes to the documentation, it will be automatically reloaded in your web browser.</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="how-do-i-build-api-rst-files-automatically-for-a-standard-python-package">
+<span id="faq-doc-api-standard"></span><h3>How do I build API .rst files automatically for a standard Python package?<a class="headerlink" href="#how-do-i-build-api-rst-files-automatically-for-a-standard-python-package" title="Link to this heading"></a></h3>
+<p>Here is how you can <strong>automate</strong> the process of generating API documentation for a standard Python package located in the <code class="docutils literal notranslate"><span class="pre">docs/source/api</span></code> folder.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Your package is considered a <strong>standard package</strong> if it is imported as <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">&lt;package_name&gt;</span></code> instead of <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">&lt;namespace_name&gt;.&lt;package_name&gt;</span></code>.</p>
+</div>
+<ol class="arabic">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">sphinxcontrib-apidoc</span></code> to the <code class="docutils literal notranslate"><span class="pre">requirements/docs.txt</span></code> file.</p>
+<blockquote>
+<div><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sphinx
+sphinx_rtd_theme
+sphinx-copybutton
+sphinxcontrib-apidoc
+...
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">--file</span> <span class="pre">requirements/docs.txt</span></code> to install the new dependency.</p></li>
+<li><p>Replace the following code block in your <code class="docutils literal notranslate"><span class="pre">docs/source/conf.py</span></code> file from</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;sphinx.ext.autodoc&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.napoleon&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.todo&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.viewcode&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.intersphinx&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_rtd_theme&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_copybutton&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;m2r&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;sphinxcontrib.apidoc&quot;</span><span class="p">,</span>  <span class="c1"># Add this extension to run sphinx-apidoc</span>
+    <span class="s2">&quot;sphinx.ext.napoleon&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.todo&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.viewcode&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.intersphinx&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_rtd_theme&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_copybutton&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;m2r&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="c1"># Configure where to find the source code and write API .rst files</span>
+<span class="n">apidoc_module_dir</span> <span class="o">=</span> <span class="s1">&#39;../../src/&lt;package_dir_name&gt;&#39;</span>
+<span class="n">apidoc_output_dir</span> <span class="o">=</span> <span class="s1">&#39;api&#39;</span>
+<span class="n">apidoc_excluded_paths</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;tests&#39;</span><span class="p">]</span>
+<span class="n">apidoc_separate_modules</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Next to the <code class="docutils literal notranslate"><span class="pre">apidoc_module_dir</span></code> variable above, replace <code class="docutils literal notranslate"><span class="pre">&lt;package_dir_name&gt;</span></code> with the directory name under <code class="docutils literal notranslate"><span class="pre">src</span></code>, e.g., <code class="docutils literal notranslate"><span class="pre">my_package</span></code>.</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">sphinx-reload</span> <span class="pre">doc</span></code> to build and host the documentation.</p>
+<blockquote>
+<div><p>Notice that the <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files under <code class="docutils literal notranslate"><span class="pre">docs/source/api</span></code> are generated whenever the documentation is re-rendered.</p>
+</div></blockquote>
+</li>
+<li><p>Add the following block to your <code class="docutils literal notranslate"><span class="pre">docs/source/index.rst</span></code> file:</p>
+<blockquote>
+<div><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>.. toctree::
+   :maxdepth: 2
+   :caption: API Reference
+
+    Package API &lt;api/package_dir_name&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Now, you should see the <span class="guilabel">API Package</span> section in the left menu bar of the documentation. Click on it to see the API documentation.</p></li>
+<li><p>Done! If you have any issues, please feel free to open an issue in the <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> GitHub repository.</p></li>
+</ol>
+</section>
+<section id="how-do-i-build-api-rst-files-for-a-python-package-with-a-namespace-import">
+<span id="faq-doc-api-namespace"></span><h3>How do I build API .rst files for a Python package with a namespace import?<a class="headerlink" href="#how-do-i-build-api-rst-files-for-a-python-package-with-a-namespace-import" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> if you haven’t already:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>scikit-package
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code> into your project directory:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>&lt;path-to-your-project&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Ensure you have the <code class="docutils literal notranslate"><span class="pre">API</span></code> section in <code class="docutils literal notranslate"><span class="pre">docs/source/index.rst</span></code>:</p>
+<blockquote>
+<div><div class="highlight-text notranslate"><div class="highlight"><pre><span></span>.. toctree::
+   :maxdepth: 2
+   :caption: API Reference
+
+    Package API &lt;api/package_dir_name&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Run the following CLI command to generate <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files in <code class="docutils literal notranslate"><span class="pre">docs/source/api</span></code>:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>package<span class="w"> </span>build<span class="w"> </span>api-doc
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Done!</p></li>
+</ol>
+</section>
+<section id="how-can-i-preview-the-documentation-in-each-pull-request">
+<span id="faq-doc-pr-preview"></span><h3>How can I preview the documentation in each pull request?<a class="headerlink" href="#how-can-i-preview-the-documentation-in-each-pull-request" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Visit <a class="reference external" href="https://app.readthedocs.org/">https://app.readthedocs.org/</a>.</p></li>
+<li><p>Click <span class="guilabel">Log in using GitHub</span>.</p></li>
+<li><p>If your repository is under a GitHub organization, follow the extra steps below:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Visit <a class="reference external" href="https://github.com/settings/applications">https://github.com/settings/applications</a></p></li>
+<li><p>Click the <span class="guilabel">Read the Docs Community</span> application.</p></li>
+<li><p>Click the <span class="guilabel">Request</span> button for the organization under <span class="guilabel">Organization Access</span>,</p></li>
+<li><p>Done. Now, Read the Docs can import repositories in the GitHub organization.</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Visit <a class="reference external" href="https://app.readthedocs.org/dashboard/import/">https://app.readthedocs.org/dashboard/import/</a>.</p></li>
+<li><p>Enter the <span class="guilabel">Repository name</span>.</p></li>
+<li><p>Click <span class="guilabel">Continue</span>.</p></li>
+<li><p>Visit your project page, e.g., <a class="reference external" href="https://app.readthedocs.org/projects/bobleesjrelease/">https://app.readthedocs.org/projects/bobleesjrelease/</a>.</p></li>
+<li><p>Click <span class="guilabel">Settings</span>.</p></li>
+<li><p>Click <span class="guilabel">Pull request builds</span> under <span class="guilabel">Building</span> on the left menu.</p></li>
+<li><p>Enable <span class="guilabel">Build pull requests for this project</span>.</p></li>
+<li><p>Click <span class="guilabel">Update</span>.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/doc-pr-preview-setup.png"><img alt="doc-pr-preview-setup" src="../_images/doc-pr-preview-setup.png" style="width: 600px;" />
+</a>
+</div></blockquote>
+</li>
+<li><p>Done! Now, in each PR, you will see the following workflow triggered. You can click on the workflow to view its rendered documentation online.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/doc-pr-preview-setup-ci.png"><img alt="doc-pr-preview-setup-ci" src="../_images/doc-pr-preview-setup-ci.png" style="width: 600px;" />
+</a>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Press the <span class="guilabel">d</span> key on your keyboard to view the changes!</p>
+</div>
+</section>
+<section id="how-do-i-re-deploy-online-documentation-without-another-release">
+<h3>How do I re-deploy online documentation without another release?<a class="headerlink" href="#how-do-i-re-deploy-online-documentation-without-another-release" title="Link to this heading"></a></h3>
+<p>Visit the following URL of your package: <code class="docutils literal notranslate"><span class="pre">https://github.com/&lt;org-name&gt;/&lt;package-name&gt;/actions/workflows/publish-docs-on-release.yml</span></code> i.e., <a class="reference external" href="https://github.com/diffpy/diffpy.utils/actions/workflows/publish-docs-on-release.yml">https://github.com/diffpy/diffpy.utils/actions/workflows/publish-docs-on-release.yml</a>.</p>
+<p>Click <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">workflow</span></code> and select the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch. Your online documentation will be updated with the latest changes without a new release.</p>
+</section>
+<section id="how-do-i-fix-the-no-module-named-error-when-i-render-documentation">
+<span id="faq-doc-error-no-module-name"></span><h3>How do I fix the “No module named” error when I render documentation?<a class="headerlink" href="#how-do-i-fix-the-no-module-named-error-when-i-render-documentation" title="Link to this heading"></a></h3>
+<p>(e.g., <code class="docutils literal notranslate"><span class="pre">WARNING:</span> <span class="pre">autodoc:</span> <span class="pre">failed</span> <span class="pre">to</span> <span class="pre">import</span> <span class="pre">module</span> <span class="pre">'tools'</span> <span class="pre">from</span> <span class="pre">module</span> <span class="pre">'diffpy.pdfmorph';</span> <span class="pre">the</span> <span class="pre">following</span> <span class="pre">exception</span> <span class="pre">was</span> <span class="pre">raised:</span> <span class="pre">No</span> <span class="pre">module</span> <span class="pre">named</span> <span class="pre">'diffpy.utils'</span></code>), it can be resolved by adding <code class="docutils literal notranslate"><span class="pre">autodoc_mock_imports</span> <span class="pre">=</span> <span class="pre">[&lt;pkg&gt;]</span></code> to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> right under imports. This file is located in <code class="docutils literal notranslate"><span class="pre">/docs/source/conf.py</span></code>.</p>
+</section>
+<section id="how-do-i-add-a-favicon-and-logo-to-the-documentation">
+<span id="faq-doc-favicon-logo"></span><h3>How do I add a favicon and logo to the documentation?<a class="headerlink" href="#how-do-i-add-a-favicon-and-logo-to-the-documentation" title="Link to this heading"></a></h3>
+<p>In <code class="docutils literal notranslate"><span class="pre">docs/source/conf.py</span></code>, add the following lines:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;navigation_with_keys&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+  <span class="s2">&quot;logo_only&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">html_favicon</span> <span class="o">=</span> <span class="s2">&quot;&lt;path-to-favicon&gt;&quot;</span>
+<span class="n">html_logo</span> <span class="o">=</span> <span class="s2">&quot;&lt;path-to-logo&gt;&quot;</span>
+</pre></div>
+</div>
+<p>The clickable logo will be displayed above the menu bar on the left side of the page.</p>
+</section>
+</section>
+<section id="conda-forge">
+<h2>conda-forge<a class="headerlink" href="#conda-forge" title="Link to this heading"></a></h2>
+<section id="how-do-i-add-a-new-admin-to-the-conda-forge-feedstock">
+<h3>How do I add a new admin to the conda-forge feedstock?<a class="headerlink" href="#how-do-i-add-a-new-admin-to-the-conda-forge-feedstock" title="Link to this heading"></a></h3>
+<p>Please refer to the <a class="reference internal" href="../release-guides/conda-forge.html#conda-forge-add-admin"><span class="std std-ref">Add a new admin</span></a> section.</p>
+</section>
+<section id="how-do-i-do-pre-release-for-conda-forge">
+<h3>How do I do pre-release for conda-forge?<a class="headerlink" href="#how-do-i-do-pre-release-for-conda-forge" title="Link to this heading"></a></h3>
+<p>Please refer to the <a class="reference internal" href="../release-guides/conda-forge.html#conda-forge-pre-release"><span class="std std-ref">How do I do pre-release?</span></a> section.</p>
+</section>
+</section>
+<section id="github-actions">
+<span id="faq-github-actions"></span><h2>GitHub Actions<a class="headerlink" href="#github-actions" title="Link to this heading"></a></h2>
+<section id="in-level-5-how-do-i-set-different-python-versions-for-github-ci">
+<span id="faq-github-actions-python-versions"></span><h3>In Level 5, How do I set different Python versions for GitHub CI?<a class="headerlink" href="#in-level-5-how-do-i-set-different-python-versions-for-github-ci" title="Link to this heading"></a></h3>
+<p>Python 3.13 is the current default Python version in <code class="docutils literal notranslate"><span class="pre">.github/workflows/tests-on-pr.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">.github/workflows/publish-docs-on-release.yml</span></code>. Python 3.11 to 3.13 are used in <code class="docutils literal notranslate"><span class="pre">.github/workflows/matrix-and-codecov-on-merge-to-main.yml</span></code>. To override the defaults, modify the three <code class="docutils literal notranslate"><span class="pre">.yml</span></code> files mentioned above in <code class="docutils literal notranslate"><span class="pre">.github/workflows/</span></code> as shown below:</p>
+<ol class="arabic simple">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">python_version</span></code> in <code class="docutils literal notranslate"><span class="pre">.github/workflows/tests-on-pr.yml</span></code>:</p></li>
+</ol>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">tests-on-pr</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scikit-package/release-scripts/.github/workflows/_tests-on-pr.yml@v0</span>
+<span class="w"> </span><span class="nt">with</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">project</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">package-name</span>
+<span class="w">   </span><span class="nt">c_extension</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">   </span><span class="nt">headless</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">   </span><span class="nt">python_version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.12</span>
+<span class="w"> </span><span class="nt">secrets</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">CODECOV_TOKEN</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.CODECOV_TOKEN }}</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">python_version</span></code> in <code class="docutils literal notranslate"><span class="pre">.github/workflows/_publish-docs-on-release.yml</span></code>:</p></li>
+</ol>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">docs</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scikit-package/release-scripts/.github/workflows/_tests-on-pr.yml@v0</span>
+<span class="w"> </span><span class="nt">with</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">project</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">package-name</span>
+<span class="w">   </span><span class="nt">c_extension</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">   </span><span class="nt">headless</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">   </span><span class="nt">python_version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.12</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">python_versions</span></code> in <code class="docutils literal notranslate"><span class="pre">.github/workflows/_matrix-and-codecov-on-merge-to-main.yml</span></code>:</p></li>
+</ol>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">matrix-coverage</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scikit-package/release-scripts/.github/workflows/_matrix-and-codecov-on-merge-to-main.yml@v0</span>
+<span class="w"> </span><span class="nt">with</span><span class="p">:</span>
+<span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+<span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">python_versions</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&quot;3.11,</span><span class="nv"> </span><span class="s">3.12&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="in-level-5-what-are-the-workflows-running-in-each-pull-request">
+<h3>In Level 5, what are the workflows running in each pull request?<a class="headerlink" href="#in-level-5-what-are-the-workflows-running-in-each-pull-request" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>The first workflow is called <code class="docutils literal notranslate"><span class="pre">Tests</span> <span class="pre">on</span> <span class="pre">PR</span></code> from <code class="docutils literal notranslate"><span class="pre">.github/workflows/tests-on-pr.yml</span></code>. This workflow creates a new conda environment on Linux and installs the dependencies listed in the <code class="docutils literal notranslate"><span class="pre">requirements</span></code> folder using the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel. The conda environment is configured to use the highest Python version specified when the project was initially created. It then runs the unit tests located in the <code class="docutils literal notranslate"><span class="pre">tests</span></code> folder, similar to how you would run them locally.</p></li>
+<li><p>The second workflow uses <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">CI</span></code>. This workflow checks the incoming code in the PR using <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> hooks and automatically applies fixes when possible. If any fixes are made, an additional commit is created by the <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> app. However, some hooks, such as spell checkers, may still fail even after auto-fixes. In such cases, the CI fails. The user first needs to pull the additional commit made by the <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">CI</span></code>, fix the error manually, and then push a commit to the working branch.</p></li>
+<li><p>The third workflow uses the <code class="docutils literal notranslate"><span class="pre">Codecov</span></code> app, which adds a comment to the PR summarizing the changes in code coverage as part of the <code class="docutils literal notranslate"><span class="pre">.github/workflows/tests-on-pr.yml</span></code> workflow. This workflow fails if no tests are provided for the new code or if the test coverage percentage decreases below the acceptable threshold. The threshold can be adjusted in the <code class="docutils literal notranslate"><span class="pre">.codecov.yml</span></code> file located in the project root directory. If you have a private repository and Codecov cannot be run, refer to <a class="reference internal" href="#faq-private-repo-no-codecov"><span class="std std-ref">I have a private repo and don’t have a Codecov paid plan.  Can I modify the CI workflows for this situation?</span></a>.</p></li>
+<li><p>The fourth workflow checks for a news file in the PR using <code class="docutils literal notranslate"><span class="pre">.github/workflows/check-news-item.yml</span></code>. If no news item is included for the proposed changes, this workflow fails and leaves a comment prompting the contributor to submit a new PR with the appropriate news file. Please refer to the best practices section on <a class="reference internal" href="../programming-guides/billinge-group-standards.html#news-item-practice"><span class="std std-ref">news items</span></a>.</p></li>
+</ol>
+</section>
+<section id="in-level-5-i-see-that-another-workflow-is-running-once-a-pr-is-merged-to-main-what-is-it">
+<h3>In Level 5, I see that another workflow is running once a PR is merged to <code class="docutils literal notranslate"><span class="pre">main</span></code>. What is it?<a class="headerlink" href="#in-level-5-i-see-that-another-workflow-is-running-once-a-pr-is-merged-to-main-what-is-it" title="Link to this heading"></a></h3>
+<p>The workflow <code class="docutils literal notranslate"><span class="pre">.github/workflows/matrix-and-codecov-on-merge-to-main.yml</span></code> is triggered. The goal is to ensure the latest code is tested not only on Linux but also across multiple operating systems and Python versions. This workflow runs tests on macOS (both Apple Silicon and Intel chips), Linux, and Windows and against three different Python versions, including the latest configured version. To modify the Python versions used in the workflows, refer to <a class="reference internal" href="#faq-github-actions-python-versions"><span class="std std-ref">In Level 5, How do I set different Python versions for GitHub CI?</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These workflow files call scripts located at <a class="reference external" href="https://github.com/scikit-package/release-scripts">https://github.com/scikit-package/release-scripts</a>, which are centrally managed by the <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> development team. This centralized approach ensures that individual packages do not need to be updated separately when adding support for new Python versions or operating systems.</p>
+</div>
+</section>
+<section id="i-am-encountering-a-build-is-requesting-pull-requests-write-error-how-do-i-fix-it">
+<h3>I am encountering a ‘build’ is requesting ‘pull-requests: write’ error. How do I fix it?<a class="headerlink" href="#i-am-encountering-a-build-is-requesting-pull-requests-write-error-how-do-i-fix-it" title="Link to this heading"></a></h3>
+<p>We’d like to have GitHub Actions write comments in the incoming pull request to guide us. We need to provide permissions in the GitHub repository settings by following the steps below.</p>
+<ol class="arabic simple">
+<li><p>Visit the <span class="guilabel">Settings</span> page of the GitHub repository.</p></li>
+<li><p>Click on <span class="guilabel">Actions</span> in the left sidebar.</p></li>
+<li><p>Click on <span class="guilabel">General</span> in the left sidebar.</p></li>
+<li><p>Scroll down to the <span class="guilabel">Workflow permissions</span> section.</p></li>
+<li><p>Select <span class="guilabel">Read and write permissions</span>.</p></li>
+<li><p>Done!</p></li>
+</ol>
+</section>
+<section id="what-is-the-difference-between-pull-request-and-pull-request-target">
+<h3>What is the difference between <code class="docutils literal notranslate"><span class="pre">pull_request</span></code> and <code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code>?<a class="headerlink" href="#what-is-the-difference-between-pull-request-and-pull-request-target" title="Link to this heading"></a></h3>
+<p>For the current GitHub CI for checking a news item, <code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code> is used instead of <code class="docutils literal notranslate"><span class="pre">pull_request</span></code> as shown below:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Check News Item</span>
+
+<span class="nt">on</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">pull_request_target</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">branches</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pull_request</span></code>: This event configures the <code class="docutils literal notranslate"><span class="pre">GITHUB_TOKEN</span></code> with read-only permissions by default, especially when triggered by forks.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code>: This event grants the <code class="docutils literal notranslate"><span class="pre">GITHUB_TOKEN</span></code> write permissions, enabling it to perform actions that modify the repository, such as posting comments, updating pull request statuses, or merging code. The news CI creates a comment when an additional news <code class="docutils literal notranslate"><span class="pre">.rst</span></code> is not found under the <code class="docutils literal notranslate"><span class="pre">news</span></code> folder. Hence, <code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code> is used.</p></li>
+</ul>
+<p>Another key difference is that with <code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code>, the <code class="docutils literal notranslate"><span class="pre">.yml</span></code> file <strong>must already be merged</strong> in the base branch at the time the pull request is opened or updated. For more, please refer to <a class="reference external" href="https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#pull_request_target">GitHub docs</a>.</p>
+</section>
+<section id="how-can-i-add-extra-cli-commands-in-the-github-workflow-for-running-tests">
+<span id="faq-github-actions-extra-cli-commands"></span><h3>How can I add extra CLI commands in the GitHub workflow for running tests?<a class="headerlink" href="#how-can-i-add-extra-cli-commands-in-the-github-workflow-for-running-tests" title="Link to this heading"></a></h3>
+<p>In the GitHub workflow files for testing, you might want to add extra CLI commands <strong>before</strong> running <code class="docutils literal notranslate"><span class="pre">pytest</span></code>. For example, you may want to install dependencies that are not available on <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> but are only available from PyPI to test your package.</p>
+<p>To do so, you can enter the <code class="docutils literal notranslate"><span class="pre">run:</span></code> command under the <code class="docutils literal notranslate"><span class="pre">with:</span></code> section in the workflow file.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">with</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">project</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;package-name&gt;</span>
+<span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">    </span><span class="no">pip install &lt;package-name&gt;</span>
+<span class="w">    </span><span class="no">echo &quot;Done installing &lt;package-name&gt;&quot;</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>In Level 5, the relevant workflow files are <code class="docutils literal notranslate"><span class="pre">.github/workflows/matrix-and-codecov-on-merge-to-main.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">.github/workflows/tests-on-pr.yml</span></code>.</p></li>
+<li><p>In Level 4, the relevant workflow file is <code class="docutils literal notranslate"><span class="pre">.github/workflows/_tests-on-pr-no-codecov-no-headless.yml</span></code>.</p></li>
+</ul>
+<p>Here we provide a bit more context on how the <code class="docutils literal notranslate"><span class="pre">run:</span></code> commands are used. The extra CLI commands are inserted into the reusable GitHub workflow under the <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">extra</span> <span class="pre">user-defined</span> <span class="pre">CLI</span> <span class="pre">commands</span></code> section of the reusable workflow file:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Install ${{ inputs.project }} and requirements</span>
+<span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">    </span><span class="no">conda install --file requirements/conda.txt</span>
+<span class="w">    </span><span class="no">conda install --file requirements/tests.txt</span>
+<span class="w">    </span><span class="no">if ${{ inputs.c_extension }}; then</span>
+<span class="w">      </span><span class="no">conda install --file requirements/build.txt</span>
+<span class="w">    </span><span class="no">fi</span>
+<span class="w">    </span><span class="no">python -m pip install . --no-deps</span>
+
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run extra user-defined CLI commands</span>
+<span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">    </span><span class="no">echo &quot;${{ inputs.run }}&quot; &gt; user-commands.sh</span>
+<span class="w">    </span><span class="no">bash user-commands.sh</span>
+</pre></div>
+</div>
+<p>After this step, the reusable workflow then runs the <code class="docutils literal notranslate"><span class="pre">pytest</span></code> command. To see the full reusable workflow file, please visit <a class="reference external" href="https://github.com/scikit-package/release-scripts/blob/main/.github/workflows/_tests-on-pr.yml">https://github.com/scikit-package/release-scripts/blob/main/.github/workflows/_tests-on-pr.yml</a>.</p>
+</section>
+<section id="i-have-a-private-repo-and-don-t-have-a-codecov-paid-plan-can-i-modify-the-ci-workflows-for-this-situation">
+<span id="faq-private-repo-no-codecov"></span><h3>I have a private repo and don’t have a Codecov paid plan.  Can I modify the CI workflows for this situation?<a class="headerlink" href="#i-have-a-private-repo-and-don-t-have-a-codecov-paid-plan-can-i-modify-the-ci-workflows-for-this-situation" title="Link to this heading"></a></h3>
+<p>By default, the workflows in <code class="docutils literal notranslate"><span class="pre">tests-on-pr.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">matrix-and-codecov-on-merge-to-main.yml</span></code> will have a section that uploads the code coverage to Codecov, and CI will fail if unsuccessful. Codecov is available for free on public repositories but requires a paid plan to run on private repositories. In the latter case, if you would like to turn off Codecov, we offer an alternative CI workflow that runs the tests without it.</p>
+<p>In addition to being able to customize additional commands to be run in the <code class="docutils literal notranslate"><span class="pre">run:</span></code> section (see <a class="reference internal" href="#faq-github-actions-extra-cli-commands"><span class="std std-ref">How can I add extra CLI commands in the GitHub workflow for running tests?</span></a> above), you can also change the workflows that you want your repository to run. By default, <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> will run the <code class="docutils literal notranslate"><span class="pre">tests-on-pr.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">matrix-and-codecov-on-merge-to-main.yml</span></code> workflows in the <code class="docutils literal notranslate"><span class="pre">scikit-package/release-scripts</span></code> repository. It is possible to override this default and run a different workflow for your CI if it is available in <code class="docutils literal notranslate"><span class="pre">scikit-package/release-scripts</span></code>. For example, for the situation above we offer we offer <code class="docutils literal notranslate"><span class="pre">tests-on-pr-no-codecov.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">matrix-no-codecov-on-merge-to-main.yml</span></code> which run the tests without Codecov.</p>
+<p>To do so, you can modify the script that your workflow files are calling in the <code class="docutils literal notranslate"><span class="pre">uses:</span></code> section. Normally, you’d be calling the following in <code class="docutils literal notranslate"><span class="pre">tests-on-pr.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">matrix-and-codecov-on-merge-to-main.yml</span></code>, respectively.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scikit-package/release-scripts/.github/workflows/_tests-on-pr.yml@v0</span>
+</pre></div>
+</div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scikit-package/release-scripts/.github/workflows/_matrix-and-codecov-on-merge-to-main.yml@v0</span>
+</pre></div>
+</div>
+<p>Instead, call the following in <code class="docutils literal notranslate"><span class="pre">tests-on-pr.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">matrix-and-codecov-on-merge-to-main.yml</span></code>, respectively.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scikit-package/release-scripts/.github/workflows/_tests-on-pr-no-codecov.yml@v0</span>
+</pre></div>
+</div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scikit-package/release-scripts/.github/workflows/_matrix-no-codecov-on-merge-to-main.yml@v0</span>
+</pre></div>
+</div>
+<p>Don’t forget to also delete the following section from your workflow files now that we are not uploading to Codecov in the workflows anymore.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">secrets</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">CODECOV_TOKEN</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.CODECOV_TOKEN }}</span>
+</pre></div>
+</div>
+<p>Done! If you have a different situation that our current workflows have not accounted for, please feel free to contribute a new workflow file by making a PR.</p>
+</section>
+</section>
+<section id="dependency-management">
+<span id="faq-dependency-management"></span><h2>Dependency management<a class="headerlink" href="#dependency-management" title="Link to this heading"></a></h2>
+<section id="what-are-docs-txt-tests-txt-build-txt-and-conda-txt-files-under-requirements-in-level-4-and-level-5">
+<span id="faq-dependency-files"></span><h3>What are <code class="docutils literal notranslate"><span class="pre">docs.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">tests.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">build.txt</span></code>, and <code class="docutils literal notranslate"><span class="pre">conda.txt</span></code> files under <code class="docutils literal notranslate"><span class="pre">\requirements</span></code> in Level 4 and Level 5?<a class="headerlink" href="#what-are-docs-txt-tests-txt-build-txt-and-conda-txt-files-under-requirements-in-level-4-and-level-5" title="Link to this heading"></a></h3>
+<dl class="field-list simple">
+<dt class="field-odd">pip.txt<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list all PyPI packages required to install the package via <cite>pip install &lt;package-name&gt;</cite>.</p>
+</dd>
+<dt class="field-even">conda.txt<span class="colon">:</span></dt>
+<dd class="field-even"><p>list all Conda packages required for running the package in GitHub CI. It should be typically identcal as the <code class="docutils literal notranslate"><span class="pre">pip.txt</span></code> file.</p>
+</dd>
+<dt class="field-odd">tests.txt<span class="colon">:</span></dt>
+<dd class="field-odd"><p>packages required for the testing suite to ensure all tests pass.</p>
+</dd>
+<dt class="field-even">docs.txt<span class="colon">:</span></dt>
+<dd class="field-even"><p>packages required for building the package documentation page.</p>
+</dd>
+<dt class="field-odd">build.txt<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list all conda packages required for building the package in GitHub CI, including those specified in the build section of meta.yaml (conda-recipe).</p>
+</dd>
+</dl>
+</section>
+<section id="what-is-conda-forge">
+<span id="faq-conda-ecosystem"></span><h3>What is conda-forge?<a class="headerlink" href="#what-is-conda-forge" title="Link to this heading"></a></h3>
+<p>conda-forge is an open-source-software community-maintained channel on the conda/Anaconda package server. The structure of the Anaconda server is that packages are hosted and can be installed from user-maintained “channels”, and the original vision was that different developers and organizations would put their own code on their own channels.</p>
+<p>conda-forge is a community led effort to have a <strong>single channel shared by everyone</strong>. This also allows the community to develop package maintenance tools to help with the ecosystem such as auto tick bots that check when the latest version of a package is not present on conda-forge and alert the maintainers, and GitHub workflows to pre-build wheel files for all platforms and python versions. It also tries to resolve a dependency graph for a package to install the most recent version of every package that satisfies the requirements of all the sub-packages.</p>
+<p><strong>We recommend making use of conda-forge and helping the community</strong> by, where possible, installing from conda-forge and also making sure your package is available on conda-forge so others may install it from conda-forge.</p>
+<p>Here is how you can add the conda-forge channel to your conda configuration and install the <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> package from it:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>config<span class="w"> </span>--add<span class="w"> </span>channels<span class="w"> </span>conda-forge
+conda<span class="w"> </span>install<span class="w"> </span>scikit-package
+</pre></div>
+</div>
+<p>The first command adds the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel to the conda configuration, allowing users to install packages from this channel. The second command installs the <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> package from the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel. <a class="reference external" href="https://anaconda.org/conda-forge/scikit-package">https://anaconda.org/conda-forge/scikit-package</a></p>
+</section>
+<section id="what-are-miniconda-anaconda-and-miniforge">
+<h3>What are Miniconda, Anaconda, and Miniforge?<a class="headerlink" href="#what-are-miniconda-anaconda-and-miniforge" title="Link to this heading"></a></h3>
+<p>While conda is an environment and package manager, it is itself a piece of software that must be installed locally. Several installers are available for this purpose:</p>
+<ul class="simple">
+<li><p><strong>Miniconda</strong>: A minimal installer that includes only the necessary components to manage packages and environments. In <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code> reusable GitHub workflows, we set up <code class="docutils literal notranslate"><span class="pre">Miniconda</span></code> as the default installer.</p></li>
+<li><p><strong>Anaconda</strong>: A much larger installer that not only installs conda but also provides a pre-configured environment with Python and commonly used packages such as <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, and <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">Notebook</span></code>. This comprehensive solution is often used for educational purposes, as students do not need to manually install additional packages.</p></li>
+<li><p><strong>Miniforge</strong>: Another installer that includes conda, <code class="docutils literal notranslate"><span class="pre">mamba</span></code>, and Python, with the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel pre-configured. See the next section for more information on what <code class="docutils literal notranslate"><span class="pre">mamba</span></code> is.</p></li>
+</ul>
+</section>
+<section id="why-do-some-people-use-mamba-instead-of-conda">
+<h3>Why do some people use mamba instead of conda?<a class="headerlink" href="#why-do-some-people-use-mamba-instead-of-conda" title="Link to this heading"></a></h3>
+<p>Recall that conda is a dependency manager that uses sophisticated algorithms to identify compatible software versions. As the number of dependencies increases, the solving process can become computationally expensive.</p>
+<p>To address this, <code class="docutils literal notranslate"><span class="pre">mamba</span></code> was developed. <code class="docutils literal notranslate"><span class="pre">mamba</span></code> uses the same commands and configuration options as conda but features a faster dependency-solving algorithm written in C++. <code class="docutils literal notranslate"><span class="pre">mamba</span></code> is also compatible with existing conda environments (e.g., <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>) and continues to rely on the conda ecosystem for package distribution, using channels like <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>. When you install <code class="docutils literal notranslate"><span class="pre">mamba</span></code> using <code class="docutils literal notranslate"><span class="pre">Miniforge</span></code>, the conda-forge channel is set as the default (and only) channel.</p>
+</section>
+<section id="why-are-both-pip-txt-and-conda-txt-provided">
+<span id="faq-dependency-pip-conda-both-provided"></span><h3>Why are both <code class="docutils literal notranslate"><span class="pre">pip.txt</span></code> and <code class="docutils literal notranslate"><span class="pre">conda.txt</span></code> provided?<a class="headerlink" href="#why-are-both-pip-txt-and-conda-txt-provided" title="Link to this heading"></a></h3>
+<p>Our preferred choice for installing the scikit-packaged package is as a Conda package, as outlined in the template <code class="docutils literal notranslate"><span class="pre">README.rst</span></code> file. With Conda, the end user can install all associated dependencies by running <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">--name</span> <span class="pre">new-env</span> <span class="pre">&lt;package-name&gt;</span></code>. Additionally, the environment is tested via conda-forge CI before the conda package is released, which helps ensure the package’s compatibility with its dependencies. Hence, we list conda package dependencies in <code class="docutils literal notranslate"><span class="pre">conda.txt</span></code>.</p>
+<p>However, we also want to allow users to install the package via <code class="docutils literal notranslate"><span class="pre">pip</span></code>. To support this, we provide a separate file for pip dependencies, <code class="docutils literal notranslate"><span class="pre">pip.txt</span></code>. In most cases, the dependencies listed in <code class="docutils literal notranslate"><span class="pre">conda.txt</span></code> and <code class="docutils literal notranslate"><span class="pre">pip.txt</span></code> will be identical. However, there can be exceptions. For example, <code class="docutils literal notranslate"><span class="pre">matplotlib-base</span></code> is preferred for Conda installations, while <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> is used for pip installations.</p>
+</section>
+</section>
+<section id="github-workflow">
+<span id="faq-github-workflow"></span><h2>GitHub workflow<a class="headerlink" href="#github-workflow" title="Link to this heading"></a></h2>
+<section id="i-am-new-to-github-why-do-we-use-git-github">
+<h3>I am new to GitHub. Why do we use Git/GitHub?<a class="headerlink" href="#i-am-new-to-github-why-do-we-use-git-github" title="Link to this heading"></a></h3>
+<p>GitHub allows multiple contributors to work on a software project simultaneously under an organization like <code class="docutils literal notranslate"><span class="pre">Billingegroup</span></code> or <code class="docutils literal notranslate"><span class="pre">diffpy</span></code>. There are two primary needs. First, we want to ensure that any changes under this organization are reviewed by the organization’s project maintainer. Second, we want to ensure we add new changes from the latest version of the code, particularly when working with multiple contributors across different time zones. Hence, we use GitHub to serve the needs with a specific workflow below. Please see below for an overview of the GitHub workflow.</p>
+</section>
+<section id="what-is-the-general-the-workflow">
+<span id="faq-github-workflow-overview"></span><h3>What is the general the workflow?<a class="headerlink" href="#what-is-the-general-the-workflow" title="Link to this heading"></a></h3>
+<p>Starting a new Python package in Level 4 and 5 requires a basic understanding of GitHub’s workflow, we will provide you with a brief overview and how to set up your repository.</p>
+<p>First, if you are working on a package from an organization like <code class="docutils literal notranslate"><span class="pre">github.com/diffpy</span></code> or <code class="docutils literal notranslate"><span class="pre">github.com/Billingegroup</span></code>, you first copy the repository of the organization to your GitHub user account. This process is called <code class="docutils literal notranslate"><span class="pre">forking</span></code>.</p>
+<p>Then, you will download the forked repository in your GitHub account to your local machine. This process is called <code class="docutils literal notranslate"><span class="pre">cloning</span></code>.</p>
+<p>In the cloned repository on your local machine, you will make edits. You want to first add a description for the changes by “committing” with a message describing the changes. Then you will upload these changes to the <code class="docutils literal notranslate"><span class="pre">forked</span></code> repository in your account. This process of updating code from the local computer to the repository hosted by GitHub is called <code class="docutils literal notranslate"><span class="pre">pushing</span></code>.</p>
+<p>From the forked repository, you then want to upload changes to the repository under <code class="docutils literal notranslate"><span class="pre">github.com/scikit-package/scikit-package</span></code>, for example. This process is done through a process called <code class="docutils literal notranslate"><span class="pre">pull</span> <span class="pre">request</span></code>. The Project Owner reviews this pull request and merges it into the Billinge group’s repository. If you are the contributor as well as the Project Owner, you would be the one who reviews your own code and merges your changes.</p>
+</section>
+<section id="i-have-a-general-understanding-of-fork-clone-commit-push-and-pull-request-how-do-i-set-up-my-repository-for-packaging">
+<h3>I have a general understanding of fork, clone, commit, push, and pull request. How do I set up my repository for packaging?<a class="headerlink" href="#i-have-a-general-understanding-of-fork-clone-commit-push-and-pull-request-how-do-i-set-up-my-repository-for-packaging" title="Link to this heading"></a></h3>
+<p>Please be familiar with the terminology such as “fork”, “clone”, “push”, and “pull request” explained above in <a class="reference internal" href="#faq-github-workflow-overview"><span class="std std-ref">What is the general the workflow?</span></a>.</p>
+<p>You may fork the repository using the “Fork” button on the top right corner of the repository page. This will copy the repository to your GitHub account. e.g., <code class="docutils literal notranslate"><span class="pre">github.com/scikit-package/scikit-package</span></code> to <code class="docutils literal notranslate"><span class="pre">github.com/sbillinge/scikit-package</span></code>.</p>
+<p>Then download the forked repository under your account to the local machine by cloning:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;username&gt;/&lt;package-name&gt;
+</pre></div>
+</div>
+<p>Now, you also want to link with the repository of the organization by adding the URL. Recall, we want to make changes from the latest state of the source code.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>https://github.com/&lt;org-name&gt;/&lt;package-name&gt;
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>What is <code class="docutils literal notranslate"><span class="pre">upstream</span></code>? The repository that you forked from, e.g. <code class="docutils literal notranslate"><span class="pre">scikit-package/scikit-package</span></code> is referred to as the <code class="docutils literal notranslate"><span class="pre">upstream</span></code> repository.</p>
+</div>
+<p>Verify that you have the <code class="docutils literal notranslate"><span class="pre">upstream</span></code> URL set up as the organization.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>-v
+</pre></div>
+</div>
+<p>Notice that you also have <code class="docutils literal notranslate"><span class="pre">origin</span></code> with an URL linking to your forked repository under your account. This is another GitHub jargon that refers to your forked repository.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>What is <code class="docutils literal notranslate"><span class="pre">remote</span></code>? The term <code class="docutils literal notranslate"><span class="pre">remote</span></code> is the opposite of <code class="docutils literal notranslate"><span class="pre">local</span></code>. In other words, <code class="docutils literal notranslate"><span class="pre">remote</span></code> refers to the repository that is hosted by GitHub. e.g., <code class="docutils literal notranslate"><span class="pre">github.com/scikit-package/scikit-package</span></code> or <code class="docutils literal notranslate"><span class="pre">github.com/sbillinge</span></code>.</p>
+</div>
+</section>
+<section id="do-you-have-a-general-summary-of-each-term-used-in-the-github-workflow">
+<span id="faq-github-terminology"></span><h3>Do you have a general summary of each term used in the GitHub workflow?<a class="headerlink" href="#do-you-have-a-general-summary-of-each-term-used-in-the-github-workflow" title="Link to this heading"></a></h3>
+<dl class="field-list simple">
+<dt class="field-odd">fork<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The process of copying a repository from an organization to your GitHub account. e.g., <code class="docutils literal notranslate"><span class="pre">github.com/scikit-package/scikit-package</span></code> to <code class="docutils literal notranslate"><span class="pre">github.com/sbillinge/scikit-package</span></code>.</p>
+</dd>
+<dt class="field-even">upstream<span class="colon">:</span></dt>
+<dd class="field-even"><p>The repository of the original source code. e.g., <code class="docutils literal notranslate"><span class="pre">github.com/scikit-package/scikit-package</span></code>.</p>
+</dd>
+<dt class="field-odd">origin<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The forked repository under your account. e.g., <code class="docutils literal notranslate"><span class="pre">github.com/sbillinge/scikit-package</span></code>.</p>
+</dd>
+<dt class="field-even">remote<span class="colon">:</span></dt>
+<dd class="field-even"><p>The repository that is hosted by GitHub. e.g., <code class="docutils literal notranslate"><span class="pre">github.com/scikit-package/scikit-package</span></code> or <code class="docutils literal notranslate"><span class="pre">github.com/sbillinge/scikit-package</span></code>.</p>
+</dd>
+<dt class="field-odd">branch<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The branch serves as a folder that contains the files of the repository. The <code class="docutils literal notranslate"><span class="pre">main</span></code> branch is the branch that is used for the final version of the code. Many branches can be created for different features or bug fixes that are later merged into the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch.</p>
+</dd>
+<dt class="field-even">git clone<span class="colon">:</span></dt>
+<dd class="field-even"><p>The process of locally downloading a repository from GitHub (<code class="docutils literal notranslate"><span class="pre">remote</span></code>) to your local machine.</p>
+</dd>
+<dt class="field-odd">git push<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The process of updating code from the local computer to the GitHub remote repository. Push can be made to the <code class="docutils literal notranslate"><span class="pre">origin</span></code> or <code class="docutils literal notranslate"><span class="pre">upstream</span></code> repository. But, in our workflow, we push to the <code class="docutils literal notranslate"><span class="pre">origin</span></code> repository, and then we create a pull request to merge the changes from <code class="docutils literal notranslate"><span class="pre">origin</span></code> to the <code class="docutils literal notranslate"><span class="pre">upstream</span></code> repository.</p>
+</dd>
+<dt class="field-even">git commit<span class="colon">:</span></dt>
+<dd class="field-even"><p>The process of adding a description for the changes made in the files that are ready to be pushed.</p>
+</dd>
+<dt class="field-odd">git add<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The process of selecting files to be included within a single commit.</p>
+</dd>
+</dl>
+</section>
+<section id="i-have-cloned-and-added-upstream-what-is-the-next-step">
+<h3>I have cloned and added <code class="docutils literal notranslate"><span class="pre">upstream</span></code>. What is the next step?<a class="headerlink" href="#i-have-cloned-and-added-upstream-what-is-the-next-step" title="Link to this heading"></a></h3>
+<p>We want to first sync our local folder with the <code class="docutils literal notranslate"><span class="pre">upstream</span></code> repository. This process is called <code class="docutils literal notranslate"><span class="pre">pulling</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>main
+git<span class="w"> </span>pull<span class="w"> </span>upstream<span class="w"> </span>main
+</pre></div>
+</div>
+<p>Above, we checkout the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch of your cloned folder. We then download all the latest changes from the <code class="docutils literal notranslate"><span class="pre">upstream</span></code> repository. Recall that a GitHub repository is contributed by multiple contributors. Hence, we want to ensure that we are working with the latest version of the code in the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch.</p>
+<p>Once we are fully synced with the <code class="docutils literal notranslate"><span class="pre">upstream</span></code> repository, we can now start making changes to the code.</p>
+<p>Instead of directly working in the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch of your cloned repository, you will create a copy of <code class="docutils literal notranslate"><span class="pre">main</span></code> by “branching” it from <code class="docutils literal notranslate"><span class="pre">main</span></code>. Think of a tree. You can name it anything you want like <code class="docutils literal notranslate"><span class="pre">docs-faq</span></code>, etc.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>docs-faq
+</pre></div>
+</div>
+<p>The above command not only creates a new branch but also switches to the new branch. You can verify that you are in the new branch by running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>branch
+</pre></div>
+</div>
+<p>Of course, you can always switch back to the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch by using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">main</span></code>.</p>
+<p>Now, you are ready to make changes to the code in the branch. If you have a README file in your project, try to modify it. Once you are done, you want to add the changes to a hidden folder called <code class="docutils literal notranslate"><span class="pre">.git</span></code>. This process is called <code class="docutils literal notranslate"><span class="pre">staging</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>README.rst
+</pre></div>
+</div>
+<p>Then, now you want to commit the changes with a message describing the changes.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs: added a FAQ section in the README&quot;</span>
+</pre></div>
+</div>
+<p>Now, you want to push the changes to the <code class="docutils literal notranslate"><span class="pre">origin</span></code> repository under your account. Recall <code class="docutils literal notranslate"><span class="pre">origin</span></code> refers to the forked repository under your account hosted by GitHub.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>push<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>docs-FAQ
+</pre></div>
+</div>
+<p>Go to your forked repository under your account on GitHub. You will see a green button that says “Compare &amp; pull request”. Click on it. You will see the changes you made in the branch. Click on “Create pull request”. Add a description of the changes you made. Click on “Create pull request”.</p>
+<p>The reviewer will review the changes and merge them into the <code class="docutils literal notranslate"><span class="pre">upstream</span></code> repository. You have successfully made your first contribution to the organization’s repository.</p>
+</section>
+<section id="i-still-need-to-make-another-pull-request-how-do-i-do-that">
+<h3>I still need to make another pull request. How do I do that?<a class="headerlink" href="#i-still-need-to-make-another-pull-request-how-do-i-do-that" title="Link to this heading"></a></h3>
+<p>Now, you want to make another pull request. You want to make sure that you are working with the latest version of the code in the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>main
+git<span class="w"> </span>pull<span class="w"> </span>upstream<span class="w"> </span>main
+</pre></div>
+</div>
+<p>The command above will sync your local folder with the <code class="docutils literal notranslate"><span class="pre">upstream</span></code> repository. It should download the changes made by other contributors as well as the recent commit you made in the <code class="docutils literal notranslate"><span class="pre">docs-FAQ</span></code> branch, for example.</p>
+<p>Again, you checkout a new branch from the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch. You can name it anything you want, e.g. <code class="docutils literal notranslate"><span class="pre">docs-typo</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>docs-typo
+</pre></div>
+</div>
+<p>You repeat the process of git add, commit, push to your <code class="docutils literal notranslate"><span class="pre">origin</span></code> (your forked repository) and then make a PR to the <code class="docutils literal notranslate"><span class="pre">upstream</span></code> repository (the organization’s repository).</p>
+</section>
+<section id="how-can-i-automate-the-process-of-creating-a-new-file-from-the-command-line">
+<span id="faq-github-news-automate"></span><h3>How can I automate the process of creating a new file from the command line?<a class="headerlink" href="#how-can-i-automate-the-process-of-creating-a-new-file-from-the-command-line" title="Link to this heading"></a></h3>
+<p>Add the following line to <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> or <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code> file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">cpnews</span><span class="o">=</span><span class="s2">&quot;cp news/TEMPLATE.rst news/</span><span class="k">$(</span>git<span class="w"> </span>rev-parse<span class="w"> </span>--abbrev-ref<span class="w"> </span>HEAD<span class="k">)</span><span class="s2">.rst&quot;</span>
+</pre></div>
+</div>
+<p>Optionally, if you also want to apply <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> for the <code class="docutils literal notranslate"><span class="pre">news/&lt;branch-name&gt;.rst</span></code> created, you can use the following command instead:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">cpnews</span><span class="o">=</span><span class="s1">&#39;cp news/TEMPLATE.rst news/$(git rev-parse --abbrev-ref HEAD).rst &amp;&amp; git add news/$(git rev-parse --abbrev-ref HEAD).rst&#39;</span>
+</pre></div>
+</div>
+<p>Run the following command to apply the shell configuration:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>~/.bashrc
+</pre></div>
+</div>
+<p>Now, whenever you want to create a news file for the PR, simply navigate to the top-level directory in the project and type <code class="docutils literal notranslate"><span class="pre">cpnews</span></code> on the command line.</p>
+<p>You can then open the project in an editor. The news file located under <code class="docutils literal notranslate"><span class="pre">news</span></code> will have the name <code class="docutils literal notranslate"><span class="pre">&lt;branch-name&gt;.rst</span></code> where <code class="docutils literal notranslate"><span class="pre">&lt;branch-name&gt;</span></code> is replaced by the current branch name.</p>
+<p>Add a description of the edits made in this PR. This should be a user-facing high-level summary of the edits made in this PR and will be automatically converted into the <code class="docutils literal notranslate"><span class="pre">CHANGELOG.rst</span></code> when the code is released.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>How do I write good news items? What if the changes in the PR are trivial and no news is needed? Please read our guide provided in <a class="reference internal" href="../programming-guides/billinge-group-standards.html#news-item-practice"><span class="std std-ref">Writing news items for release notes</span></a>.</p>
+</div>
+</section>
+</section>
+<section id="maintaining-scikit-package">
+<h2>Maintaining <code class="docutils literal notranslate"><span class="pre">scikit-package</span></code><a class="headerlink" href="#maintaining-scikit-package" title="Link to this heading"></a></h2>
+<section id="when-should-we-expect-different-python-versions-to-be-supported-in-the-github-workflows">
+<h3>When should we expect different Python versions to be supported in the GitHub workflows?<a class="headerlink" href="#when-should-we-expect-different-python-versions-to-be-supported-in-the-github-workflows" title="Link to this heading"></a></h3>
+<p>Please check the <strong>Support Window</strong> section in the official Scientific Python specification: <a class="reference external" href="https://scientific-python.org/specs/spec-0000/">https://scientific-python.org/specs/spec-0000/</a></p>
+</section>
+<section id="which-files-should-be-modified-when-there-is-a-new-python-version">
+<h3>Which files should be modified when there is a new Python version?<a class="headerlink" href="#which-files-should-be-modified-when-there-is-a-new-python-version" title="Link to this heading"></a></h3>
+<p>When updating Python version support, please modify the following files accordingly:</p>
+<p>In <a class="reference external" href="https://github.com/scikit-package/scikit-package">https://github.com/scikit-package/scikit-package</a>:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>File</p></th>
+<th class="head"><p>Variables to update</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">docs/source/conf.py</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PYTHON_DEFAULT_MAX_VERSION</span></code> and <code class="docutils literal notranslate"><span class="pre">PYTHON_DEFAULT_MIN_VERSION</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>In <a class="reference external" href="https://github.com/scikit-package/release-scripts">https://github.com/scikit-package/release-scripts</a>:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Workflow file</p></th>
+<th class="head"><p>Key to update</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.github/workflows/_matrix-and-codecov-on-merge-to-main.yml</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">python_versions</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.github/workflows/_matrix-no-codecov-on-merge-to-main.yml</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">python_versions</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.github/workflows/_publish-docs-on-release.yml</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">python_version</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.github/workflows/_check-news-item.yml</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">python_version</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.github/workflows/_build-pure-python-package.yml</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">python-version</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.github/workflows/_tests-on-pr.yml</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">python_version</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.github/workflows/_tests-on-pr-no-codecov.yml</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">python_version</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.github/workflows/_tests-on-pr-no-codecov-no-headless.yml</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">python-version</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../programming-guides/billinge-group-standards.html" class="btn btn-neutral float-left" title="Billinge Group standards" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../release.html" class="btn btn-neutral float-right" title="Release notes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, The Trustees of Columbia University in the City of New York.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
