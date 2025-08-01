@@ -8,7 +8,7 @@ on:
 
 jobs:
   release:
-    uses: scikit-package/release-scripts/.github/workflows/_build-wheel-release-upload.yml@v0
+    uses: Tieqiong/release-scripts/.github/workflows/_build-wheel-release-upload.yml@pypi
     with:
       project: scikit-package
       c_extension: false
